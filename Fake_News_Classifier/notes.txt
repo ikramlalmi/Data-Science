@@ -1,0 +1,9 @@
+The Passive-Aggressive algorithms are a family of Machine learning algorithms.
+it is an online-learning algorithm will get a training example, update the classifier, 
+and then throw away the example.n used for huge data sets.
+
+Passive: If the prediction is correct, keep the model and do not make any changes. i.e., the data in the example is not enough to cause any changes in the model. 
+Aggressive: If the prediction is incorrect, make changes to the model. i.e., some change to the model may correct it.
+
+TF (Term Frequency): The number of times a word appears in a document is its Term Frequency. A higher value means a term appears more often than others, and so, the document is a good match when the term is part of the search terms.
+IDF (Inverse Document Frequency): Words that occur many times a document, but also occur many times in many others, may be irrelevant. IDF is a measure of how significant a term is in the entire corpus.
