@@ -1,0 +1,27 @@
+XGBoost: 
+Stands for eXtreme Gradient Boosting and is based on decision trees. In this project, we will import the XGBClassifier from the xgboost library; this is an implementation of the scikit-learn API for XGBoost classification.
+goal: To build a model to accurately detect the presence of Parkinson’s disease in an individual.
+
+loc is label-based, which means that you have to specify rows and columns based on their row and column labels.
+iloc is integer position-based, so you have to specify rows and columns by their integer position values (0-based integer position).
+
+loc["rowname","columnsname"] or iloc[row num, col num]
+loc[:,"col of interest"]
+:-> slicing if alone it is everything. 
+df.loc['Mon':'Fri':2 , :] start:stop:step
+df.iloc[0:4:2, :] n:m:s excludes m
+with callables, with iloc you will get a value error if you 
+df.values will return a Numpy representation of the DataFrame.(list), with no index. 
+
+count_row = df.shape[0]  # gives number of row count
+count_col = df.shape[1]  # gives number of col count
+
+MinMaxScaler:
+Transform features by scaling each feature to a given range.
+This estimator scales and translates each feature individually such that it is in the given range on the training set, e.g. between zero and one.
+
+XGBClassifier and train the model. This classifies using eXtreme Gradient Boosting- using gradient boosting algorithms for modern data science problems. It falls under the category of Ensemble Learning in ML, where we train and predict using many models to produce one superior output.
+The accuracy of a predictive model can be boosted in two ways:
+a. Either by embracing feature engineering or
+b. By applying boosting algorithms straight away.
+The purpose of boosting Algorithm is to sequentially apply the weak classification algorithm to repeatedly modified versions of the data, thereby producing a sequence of weak classifiers
