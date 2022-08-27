@@ -1,0 +1,13 @@
+XGBoost: 
+Stands for eXtreme Gradient Boosting and is based on decision trees. In this project, we will import the XGBClassifier from the xgboost library; this is an implementation of the scikit-learn API for XGBoost classification.
+goal: To build a model to accurately detect the presence of Parkinson’s disease in an individual.
+
+loc is label-based, which means that you have to specify rows and columns based on their row and column labels.
+iloc is integer position-based, so you have to specify rows and columns by their integer position values (0-based integer position).
+
+loc["rowname","columnsname"] or iloc[row num, col num]
+loc[:,"col of interest"]
+:-> slicing if alone it is everything. 
+df.loc['Mon':'Fri':2 , :] start:stop:step
+df.iloc[0:4:2, :] n:m:s excludes m
+with callables, with iloc you will get a value error if you put straight, isntead:df.iloc[list(df.Humidity > 50)]
