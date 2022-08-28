@@ -1,0 +1,7 @@
+In this color detection Python project, we are going to build an application through which you can automatically get the name of the color by clicking on them. So for this, we will have a data file that contains the color name and its values. Then we will calculate the distance from each color and find the shortest one.
+Colors are made up of 3 primary colors; red, green, and blue. RGB.
+OpenCV (Open Source Computer Vision): The library has more than 2500 algorithms and is capable of processing images and videos to detect faces, identify objects, classify human actions, track moving objects, color detection, pattern recognition and many more.
+used in Python for building real-time Machine Learning and Deep Learning applications. 
+Computer vision is a multidisciplinary scientific field that operates on digital images or videos to automate tasks that the human visual system can do.
+
+Computer vision tasks include gathering, processing and analyzing the information from digital images. It is closely linked with Artificial Intelligence and Machine Learning as the computer must interpret what it sees and analyze the digital image in the same way as a human sees. https://data-flair.training/blogs/opencv-python-tutorial/
