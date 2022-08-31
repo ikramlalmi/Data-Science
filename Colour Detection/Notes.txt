@@ -1,0 +1,16 @@
+In this color detection Python project, we are going to build an application through which you can automatically get the name of the color by clicking on them. So for this, we will have a data file that contains the color name and its values. Then we will calculate the distance from each color and find the shortest one.
+Colors are made up of 3 primary colors; red, green, and blue. RGB.
+OpenCV (Open Source Computer Vision): The library has more than 2500 algorithms and is capable of processing images and videos to detect faces, identify objects, classify human actions, track moving objects, color detection, pattern recognition and many more.
+used in Python for building real-time Machine Learning and Deep Learning applications. 
+Computer vision is a multidisciplinary scientific field that operates on digital images or videos to automate tasks that the human visual system can do.
+Computer vision tasks include gathering, processing and analyzing the information from digital images. It is closely linked with Artificial Intelligence and Machine Learning as the computer must interpret what it sees and analyze the digital image in the same way as a human sees. https://data-flair.training/blogs/opencv-python-tutorial/
+
+library and functions used: 
+vars(object): takes any obkect that has a --dict-- attribute. The method returns the __dict__ attribute for a module, class, instance, or any other object if the same has a __dict__ attribute. If the object fails to match the attribute, it raises a TypeError exception. 
+argparse: is a Python module to streamline command-line interfaces by providing automation and easy usability.The program implementation defines what arguments it requires, and argparse parses the arguments. The module also generates help, errors, and usage messages in case a user provides invalid arguments.The parser object is responsible for parsing the command line arguments into Python data types.
+To add program arguments, we call the add_argument method of the parser object. Generally, these calls instruct the parser object on transforming the string input on the command line into objects
+The argument’s name has -- before it, which means it is an optional argument. When we call the parse_args method, it returns an object with two attributes, -i and --image.
+single dash is for short option -f and a long option --foo. The double dash -- is used to distinguish a long option from a collection of short options.
+cv2.imread() method loads an image from the specified file. If the image cannot be read (because of missing file, improper permissions, unsupported or invalid format) then this method returns an empty matrix.
+
+The waitKey() function waits the specified amount of milliseconds and then returns the code of the key that was pressed, or -1 if no key was pressed.
