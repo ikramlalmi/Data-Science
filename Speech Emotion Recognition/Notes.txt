@@ -1,0 +1,15 @@
+SER:commonly used in call centers. 
+librosa: Py library for analyzing audio and music.
+In this Python mini project, we will use the libraries librosa, soundfile, and sklearn (among others) to build a model using an MLPClassifier.
+
+We used an MLPClassifier and made use of the soundfile library to read the sound file, and the librosa library to extract features from it. 
+funtion extract_feature takes 4 parameters- the file name and three Boolean parameters for the three features.
+Open the sound file with soundfile.SoundFile using with-as so it’s automatically closed once we’re done. 
+Now, let’s load the data with a function load_data() – this takes in the relative size of the test set as parameter. x and y are empty lists; we’ll use the glob() function from the glob module to get all the pathnames for the sound files in our dataset. The pattern we use for this is: “path/Actor_*/*.wav”.
+Using our emotions dictionary, this number is turned into an emotion, and our function checks whether this emotion is in our list of observed_emotions; if not, it continues to the next file. It makes a call to extract_feature and stores what is returned in ‘feature’. Then, it appends the feature to x and the emotion to y. So, the list x holds the features and y holds the emotions. We call the function train_test_split with these, the test size, and a random state value, and return that.
+os.path.basename() method in Python is used to get the base name in specified path. This method internally use os.path.split() method to split the specified path into a pair (head, tail).
+
+The continue statement in Python returns the control to the beginning of the while/for loop
+MLPClassifier This flexibility allows them to be applied to other types of data. For example, the pixels of an image can be reduced down to one long row of data and fed into a MLP. The words of a document can also be reduced to one long row of data and fed to a MLP. Even the lag observations for a time series prediction problem can be reduced to a long row of data and fed to a MLP.
+MLPs are suitable for classification prediction problems where inputs are assigned a class or label.
+https://machinelearningmastery.com/when-to-use-mlp-cnn-and-rnn-neural-networks/
